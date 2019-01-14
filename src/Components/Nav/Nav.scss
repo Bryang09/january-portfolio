@@ -1,0 +1,41 @@
+.Nav {
+  position: fixed;
+  top: 0;
+  left: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h3 a {
+    color: #fff;
+  }
+
+  .navContent {
+    width: 40vw;
+    display: flex;
+    position: fixed;
+    top: 25px;
+    left: 50vw;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+      color: #00b9ff;
+      margin: 20px;
+      font-size: 22px;
+      font-weight: 400;
+
+      a {
+        color: #00b9ff;
+        transition: 1s ease;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Nav .navContent {
+    h4 {
+      font-size: 18px;
+    }
+  }
+}

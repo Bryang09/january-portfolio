@@ -22,11 +22,32 @@
     display: flex;
 
     .icon {
-      img {
-        height: 70px;
-        width: 70px;
+      i {
         margin: 0 15px;
+        color: #fff;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Landing {
+    h1 {
+      font-size: 4em;
+    }
+    h3 {
+      font-size: 2em;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .Landing {
+    background: linear-gradient(#306dd6, #00b9ff, #39fff1);
+    h1 {
+      font-size: 4em;
+    }
+    h3 {
+      font-size: 2em;
     }
   }
 }

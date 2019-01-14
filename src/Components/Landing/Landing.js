@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import Nav from "../Nav/Nav";
+
 import "./Landing.scss";
 
 class Landing extends Component {
@@ -8,17 +10,17 @@ class Landing extends Component {
       {
         id: 0,
         path: "https://github.com/Bryang09",
-        img: "https://img.icons8.com/ios/100/ffffff/github-filled.png"
+        class: "fab fa-github"
       },
       {
         id: 1,
         path: "https://www.linkedin.com/in/bryan-gonzalez09/",
-        img: "https://img.icons8.com/material/100/ffffff/linkedin.png"
+        class: "fab fa-linkedin"
       },
       {
         id: 2,
         path: "mailto:bryan.gonzalez1020.bg@gmail.com",
-        img: "https://img.icons8.com/metro/100/ffffff/filled-message.png"
+        class: "fas fa-envelope"
       }
     ]
   };
@@ -31,14 +33,17 @@ class Landing extends Component {
             target={res.id !== 2 ? "_blank" : null}
             rel="noopener noreferrer"
           >
-            <img src={res.img} alt="icon" />
+            <i className={`${res.class} fa-4x`} />
           </a>
         </div>
       );
     });
     console.log(icons);
+    console.log(this.props);
+
     return (
       <div className="Landing">
+        <Nav location={this.props.location.pathname} />
         <h1>Bryan Gonzalez</h1>
         <h3>Front End Developer</h3>
         <div className="icons">{icons}</div>

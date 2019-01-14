@@ -1,0 +1,47 @@
+import React, { Component } from "react";
+
+import { Link } from "react-router-dom";
+
+import "./Nav.scss";
+// #0082b3
+class Nav extends Component {
+  state = {
+    content: [
+      { id: 0, name: "about", link: "/about" },
+      { id: 1, name: "project", link: "/projects" },
+      { id: 2, name: "contact", link: "/contact" },
+      { id: 3, name: "resume", link: "/resume" }
+    ]
+  };
+
+  render() {
+    const content = this.state.content.map(res => {
+      return (
+        <h4 key={res.id}>
+          <Link
+            to={res.link}
+            // style={
+            //   this.props.location === "/" && window.innerWidth < 600
+            //     ? { color: "#fff" }
+            //     : null
+            // }
+          >
+            {res.name}
+          </Link>
+        </h4>
+      );
+    });
+    const logo = `<bg />`;
+    console.log(window.innerWidth);
+    return (
+      <div className="Nav">
+        <h3>
+          <Link to="/">{logo}</Link>
+        </h3>
+        <div className="navContent">{content}</div>
+      </div>
+    );
+  }
+}
+
+export default Nav;
