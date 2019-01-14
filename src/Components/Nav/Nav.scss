@@ -5,8 +5,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  h3 a {
-    color: #fff;
+  h3 {
+    font-size: 2em;
+    a {
+      color: #fff;
+    }
   }
 
   .navContent {
@@ -27,6 +30,10 @@
       a {
         color: #00b9ff;
         transition: 1s ease;
+
+        &:hover {
+          translate: 1s;
+        }
       }
     }
   }
@@ -37,5 +44,23 @@
     h4 {
       font-size: 18px;
     }
+  }
+}
+@media screen and (max-width: 600px) {
+  .Nav {
+    h3 {
+      font-size: 2em;
+      display: none;
+    }
+    .navContent {
+      display: none;
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  #logo {
+    font-size: 2em;
   }
 }

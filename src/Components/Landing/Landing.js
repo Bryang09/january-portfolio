@@ -22,7 +22,14 @@ class Landing extends Component {
         path: "mailto:bryan.gonzalez1020.bg@gmail.com",
         class: "fas fa-envelope"
       }
-    ]
+    ],
+    width: window.innerWidth
+  };
+
+  componentDidUpdate = () => {
+    if (window.innerWidth !== this.state.width) {
+      this.setState({ width: window.innerWidth });
+    }
   };
   render() {
     const icons = this.state.icons.map(res => {
@@ -33,20 +40,28 @@ class Landing extends Component {
             target={res.id !== 2 ? "_blank" : null}
             rel="noopener noreferrer"
           >
-            <i className={`${res.class} fa-4x`} />
+            <i
+              className={
+                window.innerWidth < 600
+                  ? `${res.class} fa-2x`
+                  : `${res.class} fa-4x`
+              }
+            />
           </a>
         </div>
       );
     });
     console.log(icons);
-    console.log(this.props);
+    console.log(this.state.width);
 
     return (
       <div className="Landing">
         <Nav location={this.props.location.pathname} />
-        <h1>Bryan Gonzalez</h1>
-        <h3>Front End Developer</h3>
-        <div className="icons">{icons}</div>
+        <div className="landingContent">
+          <h1>Bryan Gonzalez</h1>
+          <h3>Front End Developer</h3>
+          <div className="icons">{icons}</div>
+        </div>
       </div>
     );
   }
