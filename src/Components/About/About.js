@@ -26,7 +26,7 @@ class About extends Component {
     const icons = this.state.icons.map(res => {
       return (
         <div className="icon" key={res.id}>
-          <i className={`${res.class} fa-6x`} style={{ color: res.color }} />
+          <i className={`${res.class} `} style={{ color: res.color }} />
         </div>
       );
     });

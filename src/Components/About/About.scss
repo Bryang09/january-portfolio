@@ -27,7 +27,7 @@ $color: #00b9ff;
 
     .icons {
       display: flex;
-      width: 30vw;
+      width: 40vw;
       margin: 5vh auto 0;
       justify-content: center;
       align-items: center;
@@ -36,7 +36,64 @@ $color: #00b9ff;
         width: 18%;
         display: flex;
         justify-content: center;
+
+        i {
+          font-size: 90px;
+        }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1192px) {
+  .aboutMe .intPara .icons {
+    width: 40vw;
+    .icon i {
+      font-size: 80px;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .aboutMe .intPara .icons {
+    width: 50vw;
+    .icon i {
+      font-size: 80px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .aboutMe .intPara {
+    h2 {
+      font-size: 1.3em;
+      width: 95vw;
+      text-align: center;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    .icons {
+      width: 60vw;
+      .icon i {
+        font-size: 70px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .aboutMe .intPara .icons {
+    margin-top: 10vh;
+    width: 70vw;
+    .icon i {
+      font-size: 70px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .aboutMe .intPara .icons {
+    margin-top: 10vh;
+    width: 80vw;
+    .icon i {
+      font-size: 50px;
     }
   }
 }
