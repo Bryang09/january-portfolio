@@ -21,9 +21,6 @@ class About extends Component {
     this.setState({ heroOnly: !this.state.heroOnly });
   };
   render() {
-    console.log(this.state.heroOnly);
-    console.log(this.refs.aboutMe);
-
     const icons = this.state.icons.map(res => {
       return (
         <div className="icon" key={res.id}>

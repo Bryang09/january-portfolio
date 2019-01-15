@@ -51,8 +51,6 @@ class Landing extends Component {
         </div>
       );
     });
-    console.log(icons);
-    console.log(this.state.width);
 
     return (
       <div className="Landing">

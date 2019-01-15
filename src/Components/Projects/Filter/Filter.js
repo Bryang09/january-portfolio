@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Filter = props => {
+  console.log(props);
   const _projects = props.projects.map(res => {
     return (
       <div
@@ -12,13 +13,22 @@ const Filter = props => {
         }}
         key={res.id}
       >
-        <Link to={{ pathname: `/projects/${res.id}` }}>
+        <Link
+          to={
+            res.react === true
+              ? { pathname: `/projects/react/${res.id}` }
+              : res.angular === true
+              ? { pathname: `/projects/angular/${res.id}` }
+              : res.vanilla === true
+              ? { pathname: `/projects/vanilla/${res.id}` }
+              : null
+          }
+        >
           <div className="link" />
         </Link>
       </div>
     );
   });
-  console.log(props.projects);
   return _projects;
 };
 

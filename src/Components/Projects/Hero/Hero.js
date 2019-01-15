@@ -2,14 +2,30 @@ import React from "react";
 
 const Hero = props => {
   const options = props.options.map(res => {
-    console.log(res);
     return (
       <div className="option" key={res.id}>
-        <h3 onClick={res.func}>{res.name}</h3>
+        <h3
+          onClick={
+            res.id === 0
+              ? props.onTop
+              : res.id === 1
+              ? props.onRecent
+              : res.id === 2
+              ? props.onReact
+              : res.id === 3
+              ? props.onVanilla
+              : res.id === 4
+              ? props.onAngular
+              : res.id === 5
+              ? props.onAxios
+              : null
+          }
+        >
+          {res.name}
+        </h3>
       </div>
     );
   });
-  console.log(props.options);
   return (
     <div className="projectBg">
       <h1>Projects</h1>

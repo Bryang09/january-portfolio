@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 import "./Projects.scss";
 
@@ -38,6 +37,26 @@ class Projects extends Component {
     this.setState({ top: false,  recent: true, react: false, vanilla: false, angular: false, axios: false, 
      });
   };
+  onReact = () => {
+    // prettier-ignore
+    this.setState({ top: false,  recent: false, react: true, vanilla: false, angular: false, axios: false, 
+     });
+  };
+  onVanilla = () => {
+    // prettier-ignore
+    this.setState({ top: false,  recent: false, react: false, vanilla: true, angular: false, axios: false, 
+     });
+  };
+  onAngular = () => {
+    // prettier-ignore
+    this.setState({ top: false,  recent: false, react: false, vanilla: false, angular: true, axios: false, 
+     });
+  };
+  onAxios = () => {
+    // prettier-ignore
+    this.setState({ top: false,  recent: false, react: false, vanilla: false, angular: false, axios: true, 
+     });
+  };
 
   render() {
     const top = projects.filter(res => res.top);
@@ -47,11 +66,18 @@ class Projects extends Component {
     const angular = projects.filter(res => res.angular);
     const axios = projects.filter(res => res.axios);
 
-    console.log(this.state);
     return (
       <div className="Projects">
         <Nav location={this.props.location.pathname} />
-        <Hero options={this.state.options} onTop={this.onTop} />
+        <Hero
+          options={this.state.options}
+          onTop={this.onTop}
+          onRecent={this.onRecent}
+          onReact={this.onReact}
+          onVanilla={this.onVanilla}
+          onAngular={this.onAngular}
+          onAxios={this.onAxios}
+        />
         <div className="projectsContainer">
           {/* {top} */}
           {this.state.top ? (

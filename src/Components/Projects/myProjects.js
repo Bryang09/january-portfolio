@@ -9,7 +9,9 @@ export const projects = [
     angular: false,
     axios: true,
     code: "https://github.com/Bryang09/watches",
-    demo: "https://intense-bayou-29884.herokuapp.com/#/"
+    demo: "https://intense-bayou-29884.herokuapp.com/#/",
+    name: "The Watches App",
+    desc: `This is an application created with the MERN Stack.`
   },
   {
     id: 1,
@@ -21,7 +23,9 @@ export const projects = [
     angular: false,
     axios: true,
     code: "https://github.com/Bryang09/newshelter",
-    demo: "https://bryang09.github.io/newshelter/#/"
+    demo: "https://bryang09.github.io/newshelter/#/",
+    name: "The Shelter App",
+    desc: `This is a React application that uses the PetFinder API to search for nearby shelters and animals.`
   },
   {
     id: 2,
@@ -33,7 +37,9 @@ export const projects = [
     angular: false,
     axios: true,
     code: "https://github.com/Bryang09/newmovies",
-    demo: "https://bryang09.github.io/newmovies/#/"
+    demo: "https://bryang09.github.io/newmovies/#/",
+    name: "The Movies App",
+    desc: `This is an application that uses the MoviesDB API to search for movies and shows.`
   },
   {
     id: 3,
@@ -45,7 +51,9 @@ export const projects = [
     angular: false,
     axios: true,
     code: "https://github.com/Bryang09/anime",
-    demo: "https://bryang09.github.io/anime/#/"
+    demo: "https://bryang09.github.io/anime/#/",
+    name: "The Watches App",
+    desc: `This is an application created with the MERN Stack.`
   },
   {
     id: 4,
@@ -57,7 +65,9 @@ export const projects = [
     angular: false,
     axios: false,
     code: "https://github.com/Bryang09/traveling",
-    demo: "https://bryang09.github.io/traveling/#/"
+    demo: "https://bryang09.github.io/traveling/#/",
+    name: "The Watches App",
+    desc: `This is an application created with the MERN Stack.`
   },
   {
     id: 5,
@@ -69,7 +79,9 @@ export const projects = [
     angular: true,
     axios: false,
     code: "https://github.com/Bryang09/ng-restaurant",
-    demo: "https://bryang09.github.io/ng-restaurant"
+    demo: "https://bryang09.github.io/ng-restaurant",
+    name: "The Watches App",
+    desc: `This is an application created with the MERN Stack.`
   },
   {
     id: 6,
@@ -81,7 +93,9 @@ export const projects = [
     angular: false,
     axios: false,
     code: "https://github.com/Bryang09/appDeveloper",
-    demo: "https://bryang09.github.io/appDeveloper"
+    demo: "https://bryang09.github.io/appDeveloper",
+    name: "The Watches App",
+    desc: `This is an application created with the MERN Stack.`
   },
   {
     id: 7,
@@ -93,7 +107,9 @@ export const projects = [
     angular: false,
     axios: false,
     code: "https://github.com/Bryang09/construction",
-    demo: "https://bryang09.github.io/construction"
+    demo: "https://bryang09.github.io/construction",
+    name: "The Watches App",
+    desc: `This is an application created with the MERN Stack.`
   },
   {
     id: 8,
@@ -105,7 +121,9 @@ export const projects = [
     angular: false,
     axios: false,
     code: "https://github.com/Bryang09/textToSpeech2",
-    demo: "https://bryang09.github.io/textToSpeech2"
+    demo: "https://bryang09.github.io/textToSpeech2",
+    name: "The Watches App",
+    desc: `This is an application created with the MERN Stack.`
   },
   {
     id: 9,
@@ -117,7 +135,9 @@ export const projects = [
     angular: false,
     axios: false,
     code: "https://github.com/Bryang09/wordBeater",
-    demo: "https://bryang09.github.io/wordBeater"
+    demo: "https://bryang09.github.io/wordBeater",
+    name: "The Watches App",
+    desc: `This is an application created with the MERN Stack.`
   },
   {
     id: 10,
@@ -129,7 +149,9 @@ export const projects = [
     angular: false,
     axios: false,
     code: "https://github.com/Bryang09/splitScreen",
-    demo: "https://bryang09.github.io/splitScreen"
+    demo: "https://bryang09.github.io/splitScreen",
+    name: "The Watches App",
+    desc: `This is an application created with the MERN Stack.`
   },
   {
     id: 11,
@@ -141,6 +163,36 @@ export const projects = [
     angular: false,
     axios: false,
     code: "https://github.com/Bryang09/ghFinder",
-    demo: "https://bryang09.github.io/ghFinder"
+    demo: "https://bryang09.github.io/ghFinder",
+    name: "The Watches App",
+    desc: `This is an application created with the MERN Stack.`
+  },
+  {
+    id: 12,
+    img: "./img/glasses.png",
+    top: false,
+    recent: false,
+    react: false,
+    vanilla: false,
+    angular: true,
+    axios: false,
+    code: "https://github.com/Bryang09/ng-restaurant",
+    demo: "https://bryang09.github.io/ng-restaurant",
+    name: "The Watches App",
+    desc: `This is an application created with the MERN Stack.`
+  },
+  {
+    id: 13,
+    img: "./img/trainer.png",
+    top: false,
+    recent: false,
+    react: false,
+    vanilla: false,
+    angular: true,
+    axios: false,
+    code: "https://github.com/Bryang09/ng-glasses",
+    demo: "https://bryang09.github.io/ng-glasses",
+    name: "The Watches App",
+    desc: `This is an application created with the MERN Stack.`
   }
 ];

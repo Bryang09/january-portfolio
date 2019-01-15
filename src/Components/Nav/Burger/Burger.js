@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import "./Burger.scss";
 
 const Burger = props => {
-  console.log(props);
   return (
     <div className="Burger">
       <div className="burgerButton" onClick={props.click}>
@@ -53,13 +52,13 @@ const Burger = props => {
           <Link to="/about">about</Link>
         </h3>
         <h3 className="burgerOptions">
-          <Link to="/about">projects</Link>
+          <Link to="/projects">projects</Link>
         </h3>
         <h3 className="burgerOptions">
-          <Link to="/about">contact</Link>
+          <Link to="/contact">contact</Link>
         </h3>
         <h3 className="burgerOptions">
-          <Link to="/about">resume</Link>
+          <Link to="/resume">resume</Link>
         </h3>
       </div>
     </div>

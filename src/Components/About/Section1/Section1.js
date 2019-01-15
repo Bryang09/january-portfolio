@@ -18,7 +18,6 @@ const Section1 = props => {
           complicated. However, I believe this is what allowed me to grow not
           only as a developer, but as a person as well.
         </h4>
-        <h2 />
         <h2>That didn't answer who I am?</h2>
         <h4>
           If you've read this far, you probably have a pretty good idea about
