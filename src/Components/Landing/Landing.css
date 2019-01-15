@@ -1,0 +1,65 @@
+.Landing {
+  height: 100vh;
+  background: url("./bg.svg") no-repeat center center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.Landing h1 {
+  font-size: 5em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.Landing h3 {
+  font-weight: 300;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.Landing .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Landing .icons .icon i {
+  margin: 0 15px;
+  color: #fff;
+}
+
+.landingContent {
+  padding-left: 5vw;
+}
+
+@media screen and (max-width: 768px) {
+  .Landing h1 {
+    font-size: 4em;
+  }
+  .Landing h3 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Landing {
+    background: -webkit-gradient(linear, left top, left bottom, from(#306dd6), color-stop(#00b9ff), to(#39fff1));
+    background: linear-gradient(#306dd6, #00b9ff, #39fff1);
+  }
+  .Landing h1 {
+    font-size: 2em;
+  }
+  .Landing h3 {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=Landing.css.map */

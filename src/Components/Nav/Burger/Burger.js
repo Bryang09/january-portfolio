@@ -37,10 +37,19 @@ const Burger = props => {
         style={
           props.burger && props.location === "/about"
             ? { display: "flex", background: "#9c8af6" }
+            : props.burger && props.location === "/projects"
+            ? { display: "flex", background: "#26e4bf" }
+            : props.burger && props.location === "react"
+            ? { display: "flex", background: "#39f1ff" }
+            : props.burger && props.location === "angular"
+            ? { display: "flex", background: "#E53938" }
+            : props.burger && props.location === "vanilla"
+            ? { display: "flex", background: "#ead20c" }
             : props.burger
             ? { display: "flex" }
             : { display: "none" }
         }
+        // #39f1ff
       >
         <h2>
           <Link

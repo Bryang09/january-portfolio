@@ -1,0 +1,80 @@
+.projectBg {
+  height: 60vh;
+  background: url(../Hero/bg/bg3.svg) no-repeat center center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projectBg h1 {
+  color: #fff;
+  font-size: 53px;
+}
+
+.projectBg .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90vw;
+  margin: 1vh auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectBg .options .option {
+  width: 15%;
+  margin: 0 1%;
+  text-align: center;
+}
+
+.projectBg .options .option h3 {
+  margin: 0;
+  padding: 10px 10px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-weight: 700;
+  font-size: 20px;
+  color: #23e5c7;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.projectBg .options .option h3:hover {
+  background: #23e5c7;
+  color: #fff;
+}
+
+@media screen and (max-width: 998px) {
+  .projectBg .options .option h3 {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectBg .options {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .projectBg .options .option {
+    width: 30%;
+    margin: 1vh 1.5%;
+  }
+}
+/*# sourceMappingURL=Hero.css.map */

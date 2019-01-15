@@ -1,0 +1,114 @@
+.Projects {
+  height: 100%;
+}
+
+.Projects .projectsContainer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90vw;
+  margin: 0 auto;
+  -webkit-transform: translateY(-10vh);
+          transform: translateY(-10vh);
+}
+
+.Projects .projectsContainer .project {
+  height: 40vh;
+  width: 30%;
+  margin: 1vh 1.5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-animation: project 1s ease;
+          animation: project 1s ease;
+}
+
+.Projects .projectsContainer .project .link {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  border-radius: 5px;
+  transition: 1s ease;
+  -webkit-animation: cover 0.4s linear;
+          animation: cover 0.4s linear;
+}
+
+.Projects .projectsContainer .project .link:hover {
+  background: rgba(0, 0, 0, 0);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@-webkit-keyframes project {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes project {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes cover {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes cover {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .Projects .projectsContainer .project {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Projects .Projects .projectsContainer .project {
+    width: 47%;
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Projects .projectsContainer .project {
+    width: 97%;
+    height: 30vh;
+  }
+}
+/*# sourceMappingURL=Projects.css.map */

@@ -1,0 +1,117 @@
+.About {
+  height: 100%;
+}
+
+.aboutMe {
+  height: 60vh;
+}
+
+.aboutMe .intPara {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe .intPara h2 {
+  text-transform: capitalize;
+}
+
+.aboutMe .intPara h4 {
+  font-weight: 400;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #b3b3b3;
+}
+
+.aboutMe .intPara .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40vw;
+  margin: 5vh auto 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe .intPara .icons .icon {
+  width: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutMe .intPara .icons .icon i {
+  font-size: 90px;
+}
+
+@media screen and (max-width: 1192px) {
+  .aboutMe .intPara .icons {
+    width: 40vw;
+  }
+  .aboutMe .intPara .icons .icon i {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .aboutMe .intPara .icons {
+    width: 50vw;
+  }
+  .aboutMe .intPara .icons .icon i {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutMe .intPara h2 {
+    font-size: 1.3em;
+    width: 95vw;
+    text-align: center;
+  }
+  .aboutMe .intPara h4 {
+    font-size: 16px;
+  }
+  .aboutMe .intPara .icons {
+    width: 60vw;
+  }
+  .aboutMe .intPara .icons .icon i {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutMe .intPara .icons {
+    margin-top: 10vh;
+    width: 70vw;
+  }
+  .aboutMe .intPara .icons .icon i {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aboutMe .intPara .icons {
+    margin-top: 10vh;
+    width: 80vw;
+  }
+  .aboutMe .intPara .icons .icon i {
+    font-size: 50px;
+  }
+}
+/*# sourceMappingURL=About.css.map */

@@ -1,0 +1,134 @@
+.Project {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Project .text {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Project .text h1 {
+  font-size: 5em;
+  margin-bottom: 2vh;
+}
+
+.Project .text h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #878787;
+  margin-top: 2vh;
+}
+
+.Project .text .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25vw;
+  margin: 4vh auto 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Project .text .buttons a {
+  color: #fff;
+  width: 45%;
+  margin: 0 2.5%;
+}
+
+.Project .text .buttons a h4 {
+  padding: 1.5vh 0;
+  margin: 0 2.5%;
+  text-align: center;
+  border-radius: 35px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 998px) {
+  .Project .text h1 {
+    font-size: 4em;
+  }
+  .Project .text h3 {
+    width: 98vw;
+    margin: 2vh auto 0;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .Project .text .buttons {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Project .text h1 {
+    font-size: 4em;
+  }
+  .Project .text h3 {
+    width: 98vw;
+    margin: 2vh auto 0;
+    text-align: center;
+  }
+  .Project .text .buttons {
+    width: 55vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Project .text h1 {
+    font-size: 3.2em;
+    text-align: center;
+  }
+  .Project .text .buttons a h4 {
+    padding: 1vh 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Project .text h1 {
+    font-size: 2.6em;
+    text-align: center;
+  }
+  .Project .text h3 {
+    font-size: 1em;
+    width: 85vw;
+  }
+  .Project .text .buttons {
+    width: 60vw;
+  }
+  .Project .text .buttons a h4 {
+    padding: 1vh 0;
+  }
+}
+/*# sourceMappingURL=Project.css.map */
