@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import { projects } from "../../Projects/myProjects";
 import Nav from "../../Nav/Nav";
 
+import "./Project.scss";
+
 class Project extends Component {
   render() {
     const tech = this.props.match.params.tech;

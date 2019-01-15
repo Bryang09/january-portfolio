@@ -1,5 +1,7 @@
 import React from "react";
 
+import './Hero.scss';
+
 const Hero = props => {
   const options = props.options.map(res => {
     return (

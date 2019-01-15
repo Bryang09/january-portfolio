@@ -1,0 +1,68 @@
+.projectBg {
+  height: 60vh;
+  background: url(../Hero/bg/bg3.svg) no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    color: #fff;
+    font-size: 53px;
+  }
+
+  .options {
+    display: flex;
+    width: 90vw;
+    margin: 1vh auto;
+    justify-content: center;
+    align-items: center;
+
+    .option {
+      width: 15%;
+      margin: 0 1%;
+      text-align: center;
+
+      h3 {
+        margin: 0;
+        padding: 10px 10px;
+        background: #fff;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        font-weight: 700;
+        font-size: 20px;
+        color: #23e5c7;
+        cursor: pointer;
+        transition: 0.5s ease;
+        &:hover {
+          background: #23e5c7;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .projectBg {
+    .options {
+      .option {
+        h3 {
+          padding: 8px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectBg .options {
+    flex-wrap: wrap;
+
+    .option {
+      width: 30%;
+      margin: 1vh 1.5%;
+    }
+  }
+}
