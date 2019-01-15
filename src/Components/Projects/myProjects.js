@@ -7,7 +7,9 @@ export const projects = [
     react: true,
     vanilla: false,
     angular: false,
-    axios: true
+    axios: true,
+    code: "https://github.com/Bryang09/watches",
+    demo: "https://intense-bayou-29884.herokuapp.com/#/"
   },
   {
     id: 1,
@@ -17,7 +19,9 @@ export const projects = [
     react: true,
     vanilla: false,
     angular: false,
-    axios: true
+    axios: true,
+    code: "https://github.com/Bryang09/newshelter",
+    demo: "https://bryang09.github.io/newshelter/#/"
   },
   {
     id: 2,
@@ -27,7 +31,9 @@ export const projects = [
     react: true,
     vanilla: false,
     angular: false,
-    axios: true
+    axios: true,
+    code: "https://github.com/Bryang09/newmovies",
+    demo: "https://bryang09.github.io/newmovies/#/"
   },
   {
     id: 3,
@@ -37,7 +43,9 @@ export const projects = [
     react: true,
     vanilla: false,
     angular: false,
-    axios: true
+    axios: true,
+    code: "https://github.com/Bryang09/anime",
+    demo: "https://bryang09.github.io/anime/#/"
   },
   {
     id: 4,
@@ -47,7 +55,9 @@ export const projects = [
     react: true,
     vanilla: false,
     angular: false,
-    axios: false
+    axios: false,
+    code: "https://github.com/Bryang09/traveling",
+    demo: "https://bryang09.github.io/traveling/#/"
   },
   {
     id: 5,
@@ -57,59 +67,80 @@ export const projects = [
     react: false,
     vanilla: false,
     angular: true,
-    axios: false
-  }
-];
-
-export const recent = [
-  {
-    id: 0,
-    img: "./img/watches.jpg",
-    top: true,
-    recent: false,
-    react: true,
-    vanilla: false,
-    angular: false,
-    axios: true
+    axios: false,
+    code: "https://github.com/Bryang09/ng-restaurant",
+    demo: "https://bryang09.github.io/ng-restaurant"
   },
   {
-    id: 1,
-    img: "./img/newshelter.jpg",
-    top: true,
-    recent: false,
-    react: true,
-    vanilla: false,
+    id: 6,
+    img: "./img/designer.jpg",
+    top: false,
+    recent: true,
+    react: false,
+    vanilla: true,
     angular: false,
-    axios: true
+    axios: false,
+    code: "https://github.com/Bryang09/appDeveloper",
+    demo: "https://bryang09.github.io/appDeveloper"
   },
   {
-    id: 2,
-    img: "./img/newmovies.jpg",
-    top: true,
-    recent: false,
-    react: true,
-    vanilla: false,
+    id: 7,
+    img: "./img/construction.jpg",
+    top: false,
+    recent: true,
+    react: false,
+    vanilla: true,
     angular: false,
-    axios: true
+    axios: false,
+    code: "https://github.com/Bryang09/construction",
+    demo: "https://bryang09.github.io/construction"
   },
   {
-    id: 3,
-    img: "./img/anime.jpg",
-    top: true,
-    recent: false,
-    react: true,
-    vanilla: false,
+    id: 8,
+    img: "./img/speech.jpg",
+    top: false,
+    recent: true,
+    react: false,
+    vanilla: true,
     angular: false,
-    axios: true
+    axios: false,
+    code: "https://github.com/Bryang09/textToSpeech2",
+    demo: "https://bryang09.github.io/textToSpeech2"
   },
   {
-    id: 4,
-    img: "./img/traveling.jpg",
-    top: true,
-    recent: false,
-    react: true,
-    vanilla: false,
+    id: 9,
+    img: "./img/word.jpg",
+    top: false,
+    recent: true,
+    react: false,
+    vanilla: true,
     angular: false,
-    axios: false
+    axios: false,
+    code: "https://github.com/Bryang09/wordBeater",
+    demo: "https://bryang09.github.io/wordBeater"
+  },
+  {
+    id: 10,
+    img: "./img/split.jpg",
+    top: false,
+    recent: true,
+    react: false,
+    vanilla: true,
+    angular: false,
+    axios: false,
+    code: "https://github.com/Bryang09/splitScreen",
+    demo: "https://bryang09.github.io/splitScreen"
+  },
+  {
+    id: 11,
+    img: "./img/ghFinder.jpg",
+    top: false,
+    recent: true,
+    react: false,
+    vanilla: true,
+    angular: false,
+    axios: false,
+    code: "https://github.com/Bryang09/ghFinder",
+    demo: "https://bryang09.github.io/ghFinder"
   }
 ];
