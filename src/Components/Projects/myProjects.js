@@ -66,8 +66,8 @@ export const projects = [
     axios: false,
     code: "https://github.com/Bryang09/traveling",
     demo: "https://bryang09.github.io/traveling/#/",
-    name: "The Watches App",
-    desc: `This is an application created with the MERN Stack.`
+    name: "The Traveling App",
+    desc: `This is an application created with React that focuses on better animations and UI`
   },
   {
     id: 5,
@@ -80,8 +80,8 @@ export const projects = [
     axios: false,
     code: "https://github.com/Bryang09/ng-restaurant",
     demo: "https://bryang09.github.io/ng-restaurant",
-    name: "The Watches App",
-    desc: `This is an application created with the MERN Stack.`
+    name: "The Restuarant App",
+    desc: `This is an application that uses Angular 7 to display different menu items.`
   },
   {
     id: 6,
@@ -94,8 +94,8 @@ export const projects = [
     axios: false,
     code: "https://github.com/Bryang09/appDeveloper",
     demo: "https://bryang09.github.io/appDeveloper",
-    name: "The Watches App",
-    desc: `This is an application created with the MERN Stack.`
+    name: "The Designer App",
+    desc: `This is a Vanilla Js application created after prototyping the design with Adobe XD`
   },
   {
     id: 7,
@@ -108,8 +108,8 @@ export const projects = [
     axios: false,
     code: "https://github.com/Bryang09/construction",
     demo: "https://bryang09.github.io/construction",
-    name: "The Watches App",
-    desc: `This is an application created with the MERN Stack.`
+    name: "The Construction App",
+    desc: `This is a Vanilla Js Application for a fictional construction company.`
   },
   {
     id: 8,
@@ -122,8 +122,8 @@ export const projects = [
     axios: false,
     code: "https://github.com/Bryang09/textToSpeech2",
     demo: "https://bryang09.github.io/textToSpeech2",
-    name: "The Watches App",
-    desc: `This is an application created with the MERN Stack.`
+    name: "The Speech App",
+    desc: `A Vanilla Js application which speaks.`
   },
   {
     id: 9,
@@ -136,8 +136,8 @@ export const projects = [
     axios: false,
     code: "https://github.com/Bryang09/wordBeater",
     demo: "https://bryang09.github.io/wordBeater",
-    name: "The Watches App",
-    desc: `This is an application created with the MERN Stack.`
+    name: "The Word Game",
+    desc: `This is a Vanilla Js Application that tests typing speed.`
   },
   {
     id: 10,
@@ -150,8 +150,8 @@ export const projects = [
     axios: false,
     code: "https://github.com/Bryang09/splitScreen",
     demo: "https://bryang09.github.io/splitScreen",
-    name: "The Watches App",
-    desc: `This is an application created with the MERN Stack.`
+    name: "The Split Screen App",
+    desc: `This is an application that changes display based on mouse position.`
   },
   {
     id: 11,
@@ -164,8 +164,8 @@ export const projects = [
     axios: false,
     code: "https://github.com/Bryang09/ghFinder",
     demo: "https://bryang09.github.io/ghFinder",
-    name: "The Watches App",
-    desc: `This is an application created with the MERN Stack.`
+    name: "The GhFinder App",
+    desc: `A Vanilla Js application that uses the Github Api.`
   },
   {
     id: 12,
@@ -176,10 +176,10 @@ export const projects = [
     vanilla: false,
     angular: true,
     axios: false,
-    code: "https://github.com/Bryang09/ng-restaurant",
-    demo: "https://bryang09.github.io/ng-restaurant",
-    name: "The Watches App",
-    desc: `This is an application created with the MERN Stack.`
+    code: "https://github.com/Bryang09/ng-glasses",
+    demo: "https://bryang09.github.io/ng-glasses",
+    name: "The Glasses App",
+    desc: `A UI centric application that uses Angular.`
   },
   {
     id: 13,
@@ -190,9 +190,9 @@ export const projects = [
     vanilla: false,
     angular: true,
     axios: false,
-    code: "https://github.com/Bryang09/ng-glasses",
-    demo: "https://bryang09.github.io/ng-glasses",
-    name: "The Watches App",
-    desc: `This is an application created with the MERN Stack.`
+    code: "https://github.com/Bryang09/ng-trainer",
+    demo: "https://bryang09.github.io/ng-trainer",
+    name: "The Trainer App",
+    desc: `This is an application for a for a fiction trainer.`
   }
 ];

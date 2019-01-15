@@ -27,18 +27,14 @@ class Nav extends Component {
         <h4 key={res.id}>
           <Link
             to={res.link}
-            style={
-              this.props.location === "/about" ||
-              this.props.location === "/projects"
-                ? { color: "#fff" }
-                : null
-            }
+            style={this.props.location === "/" ? { color: "#00b9ff" } : null}
           >
             {res.name}
           </Link>
         </h4>
       );
     });
+    console.log(this.props);
     return (
       <div className="Nav">
         <Burger

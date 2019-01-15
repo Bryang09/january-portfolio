@@ -3,7 +3,7 @@
 
   .projectBg {
     height: 60vh;
-    background: url(./bg/bg3.svg) no-repeat center center / cover;
+    background: url(./Hero/bg/bg3.svg) no-repeat center center / cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,5 +99,63 @@
   }
   100% {
     width: 100%;
+  }
+}
+
+.Project {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .text {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 5em;
+      margin-bottom: 2vh;
+    }
+    h3 {
+      font-size: 1.5em;
+      font-weight: 300;
+      color: #878787;
+      margin-top: 2vh;
+    }
+
+    .buttons {
+      display: flex;
+      width: 25vw;
+      margin: 4vh auto 0;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        color: #fff;
+        width: 45%;
+        margin: 0 2.5%;
+
+        h4 {
+          padding: 1.5vh 0;
+          // border: 1px solid #fff;
+          margin: 0 2.5%;
+          text-align: center;
+
+          border-radius: 35px;
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
   }
 }
