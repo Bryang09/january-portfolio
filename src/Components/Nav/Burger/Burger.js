@@ -35,7 +35,13 @@ const Burger = props => {
       </div>
       <div
         className="Navigation"
-        style={props.burger ? { display: "flex" } : { display: "none" }}
+        style={
+          props.burger && props.location === "/about"
+            ? { display: "flex", background: "#9c8af6" }
+            : props.burger
+            ? { display: "flex" }
+            : { display: "none" }
+        }
       >
         <h2>
           <Link

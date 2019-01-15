@@ -32,6 +32,7 @@ class Nav extends Component {
             //     ? { color: "#fff" }
             //     : null
             // }
+            style={this.props.location === "/about" ? { color: "#fff" } : null}
           >
             {res.name}
           </Link>
@@ -39,15 +40,37 @@ class Nav extends Component {
       );
     });
     const logo = `<bg />`;
-    console.log(window.innerWidth);
+    console.log(this.props.location);
     return (
-      <div className="Nav" style={this.state.burger ? { left: 0 } : null}>
-        <Burger burger={this.state.burger} click={this.onBurgerClick} />
-        <h3 id="logo">
-          <Link to="/">{logo}</Link>
-        </h3>
-        <div className="navContent">{content}</div>
-      </div>
+      <>
+        <div
+          className="Nav"
+          // style={
+          //   this.state.burger
+          //     ? { left: 0 }
+          //     : this.props.location === "/about"
+          //     ? { background: "#1499ee" }
+          //     : null
+          // }
+        >
+          <Burger
+            burger={this.state.burger}
+            click={this.onBurgerClick}
+            location={this.props.location}
+          />
+          <div className="logo">
+            <h3 id="logo">
+              <Link
+                to="/"
+                // style={this.props.location === "/about" ? { color: "#333" } : null}
+              >
+                {"<bg />"}
+              </Link>
+            </h3>
+          </div>
+          <div className="navContent">{content}</div>
+        </div>
+      </>
     );
   }
 }
