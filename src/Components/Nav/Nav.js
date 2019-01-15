@@ -10,7 +10,7 @@ class Nav extends Component {
   state = {
     content: [
       { id: 0, name: "about", link: "/about" },
-      { id: 1, name: "project", link: "/projects" },
+      { id: 1, name: "projects", link: "/projects" },
       { id: 2, name: "contact", link: "/contact" },
       { id: 3, name: "resume", link: "/resume" }
     ],
@@ -32,7 +32,12 @@ class Nav extends Component {
             //     ? { color: "#fff" }
             //     : null
             // }
-            style={this.props.location === "/about" ? { color: "#fff" } : null}
+            style={
+              this.props.location === "/about" ||
+              this.props.location === "/projects"
+                ? { color: "#fff" }
+                : null
+            }
           >
             {res.name}
           </Link>
