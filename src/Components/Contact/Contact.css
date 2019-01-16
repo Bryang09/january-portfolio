@@ -1,0 +1,249 @@
+.Contact {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Contact .bg {
+  height: 60vh;
+  background: url(./bg2.svg) no-repeat center center/cover;
+  background-position: center 13%;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.Contact .bg h1 {
+  color: #fff;
+  font-weight: 300;
+  -webkit-transform: translateY(-5vh);
+          transform: translateY(-5vh);
+  font-size: 3em;
+  margin-bottom: 1vh;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.Contact .bg h5 {
+  border: 1px solid #fff;
+  padding: 1.2vh 4vw;
+  border-radius: 35px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 0;
+  transition: 1s ease;
+}
+
+.Contact .bg h5:hover {
+  background: #fff;
+  color: #333;
+}
+
+.Contact .contactBoxesContainer {
+  width: 80vw;
+  margin: auto;
+  height: 40vh;
+  -webkit-transform: translateY(-8vh);
+          transform: translateY(-8vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Contact .contactBoxesContainer a {
+  width: 47%;
+  height: 90%;
+  margin: auto 1.5%;
+}
+
+.Contact .contactBoxesContainer .box {
+  width: 100%;
+  height: 100%;
+  margin: auto 1.5%;
+  border: 0.5px solid #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Contact .contactBoxesContainer .box .icon {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Contact .contactBoxesContainer .box .icon i {
+  font-size: 65px;
+  color: #fff;
+}
+
+.Contact .contactBoxesContainer .box .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Contact .contactBoxesContainer .box .text h3 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.Contact .contactBoxesContainer .box1 {
+  background: #0077b5;
+}
+
+.Contact .contactBoxesContainer .box2 {
+  background: #d54e41;
+}
+
+@media screen and (max-width: 768px) {
+  .Contact .bg {
+    height: 100%;
+  }
+  .Contact .contactBoxesContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .Contact .contactBoxesContainer a {
+    width: 100%;
+    height: 25vh;
+    margin: 1vh auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Contact {
+    background: -webkit-gradient(linear, left top, left bottom, from(#39fff1), to(#9c8af6));
+    background: linear-gradient(#39fff1, #9c8af6);
+  }
+  .Contact .bg {
+    background: rgba(0, 0, 0, 0) !important;
+  }
+  .Contact .bg h1 {
+    font-size: 3.5em !important;
+    text-align: center;
+  }
+  .Contact .contactBoxesContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .Contact .contactBoxesContainer a {
+    width: 100%;
+    height: 20vh;
+    margin: 1vh auto;
+  }
+  .Contact .contactBoxesContainer .box {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Contact .bg {
+    height: 100%;
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+  }
+  .Contact .bg h1 {
+    font-size: 2em !important;
+    text-align: center;
+  }
+  .Contact .bg h5 {
+    font-size: 16px;
+    padding: 0.5vh 5vw;
+  }
+  .Contact .contactBoxesContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Contact .contactBoxesContainer a {
+    width: 100%;
+    height: 15vh;
+    margin: 1vh auto;
+  }
+  .Contact .contactBoxesContainer .box {
+    border: none;
+  }
+  .Contact .contactBoxesContainer .box .icon i {
+    font-size: 30px;
+  }
+  .Contact .contactBoxesContainer .box .text h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

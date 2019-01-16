@@ -5,6 +5,7 @@ import Landing from "./Components/Landing/Landing";
 import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Project from "./Components/Projects/Project/Project";
+import Contact from "./Components/Contact/Contact";
 
 const Routes = () => {
   return (
@@ -13,6 +14,7 @@ const Routes = () => {
       <Route exact path="/about" component={About} />
       <Route exact path="/projects" component={Projects} />
       <Route exact path="/projects/:tech/:id" component={Project} />
+      <Route exact path="/contact" component={Contact} />
     </Switch>
   );
 };

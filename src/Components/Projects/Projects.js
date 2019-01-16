@@ -79,7 +79,6 @@ class Projects extends Component {
           onAxios={this.onAxios}
         />
         <div className="projectsContainer">
-          {/* {top} */}
           {this.state.top ? (
             <Filter projects={top} />
           ) : this.state.recent ? (
