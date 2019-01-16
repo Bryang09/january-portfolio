@@ -203,7 +203,7 @@
             align-items: center;
   }
   .Contact .bg {
-    height: 100%;
+    height: 80vh !important;
     -webkit-transform: translateY(10vh);
             transform: translateY(10vh);
   }

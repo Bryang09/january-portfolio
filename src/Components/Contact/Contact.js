@@ -12,9 +12,10 @@ class Contact extends Component {
     this.setState({ toggle: !this.state.toggle });
   };
   render() {
+    console.log(this.props);
     return (
       <div className="Contact">
-        <Nav />
+        <Nav location={this.props.location.pathname} />
         <div
           className="bg"
           style={
