@@ -40,13 +40,7 @@ class Landing extends Component {
             target={res.id !== 2 ? "_blank" : null}
             rel="noopener noreferrer"
           >
-            <i
-              className={
-                window.innerWidth < 600
-                  ? `${res.class} fa-2x`
-                  : `${res.class} fa-4x`
-              }
-            />
+            <i className={res.class} />
           </a>
         </div>
       );

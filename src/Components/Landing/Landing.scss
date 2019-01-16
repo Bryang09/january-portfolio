@@ -11,11 +11,13 @@
     font-size: 5em;
     font-weight: 700;
     margin-bottom: 0;
+    animation: titles 1s ease;
   }
   h3 {
     font-weight: 300;
     font-size: 2.5em;
     color: #fff;
+    animation: titles 1.5s ease;
   }
 
   .icons {
@@ -24,9 +26,25 @@
     .icon {
       i {
         margin: 0 15px;
-        color: #fff;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 55px;
+        transition: 0.5s linear;
+        animation: titles 2s ease;
+
+        &:hover {
+          color: #fff;
+        }
       }
     }
+  }
+}
+
+@keyframes titles {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -35,6 +53,7 @@
 }
 @media screen and (max-width: 768px) {
   .Landing {
+    background: linear-gradient(#306dd6, #00b9ff, #39fff1);
     h1 {
       font-size: 4em;
     }
@@ -45,12 +64,22 @@
 }
 @media screen and (max-width: 600px) {
   .Landing {
-    background: linear-gradient(#306dd6, #00b9ff, #39fff1);
     h1 {
-      font-size: 2em;
+      font-size: 3em;
     }
     h3 {
-      font-size: 1em;
+      font-size: 1.5em;
+    }
+    .icons {
+      display: flex;
+
+      .icon {
+        i {
+          margin: 0 15px;
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 40px;
+        }
+      }
     }
   }
 }

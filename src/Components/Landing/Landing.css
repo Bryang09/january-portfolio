@@ -18,12 +18,16 @@
   font-size: 5em;
   font-weight: 700;
   margin-bottom: 0;
+  -webkit-animation: titles 1s ease;
+          animation: titles 1s ease;
 }
 
 .Landing h3 {
   font-weight: 300;
   font-size: 2.5em;
   color: #fff;
+  -webkit-animation: titles 1.5s ease;
+          animation: titles 1.5s ease;
 }
 
 .Landing .icons {
@@ -34,7 +38,34 @@
 
 .Landing .icons .icon i {
   margin: 0 15px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 55px;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  -webkit-animation: titles 2s ease;
+          animation: titles 2s ease;
+}
+
+.Landing .icons .icon i:hover {
   color: #fff;
+}
+
+@-webkit-keyframes titles {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes titles {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .landingContent {
@@ -42,6 +73,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .Landing {
+    background: -webkit-gradient(linear, left top, left bottom, from(#306dd6), color-stop(#00b9ff), to(#39fff1));
+    background: linear-gradient(#306dd6, #00b9ff, #39fff1);
+  }
   .Landing h1 {
     font-size: 4em;
   }
@@ -51,15 +86,21 @@
 }
 
 @media screen and (max-width: 600px) {
-  .Landing {
-    background: -webkit-gradient(linear, left top, left bottom, from(#306dd6), color-stop(#00b9ff), to(#39fff1));
-    background: linear-gradient(#306dd6, #00b9ff, #39fff1);
-  }
   .Landing h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
   .Landing h3 {
-    font-size: 1em;
+    font-size: 1.5em;
+  }
+  .Landing .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Landing .icons .icon i {
+    margin: 0 15px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 40px;
   }
 }
 /*# sourceMappingURL=Landing.css.map */
