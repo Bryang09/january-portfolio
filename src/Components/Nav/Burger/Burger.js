@@ -67,7 +67,9 @@ const Burger = props => {
           <Link to="/contact">contact</Link>
         </h3>
         <h3 className="burgerOptions">
-          <Link to="/resume">resume</Link>
+          <a href="resume.pdf" target="_blank">
+            resume
+          </a>
         </h3>
       </div>
     </div>

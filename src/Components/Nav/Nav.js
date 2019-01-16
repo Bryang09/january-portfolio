@@ -25,12 +25,22 @@ class Nav extends Component {
     const content = this.state.content.map(res => {
       return (
         <h4 key={res.id}>
-          <Link
-            to={res.link}
-            style={this.props.location === "/" ? { color: "#00b9ff" } : null}
-          >
-            {res.name}
-          </Link>
+          {res.id !== 3 ? (
+            <Link
+              to={res.link}
+              style={this.props.location === "/" ? { color: "#00b9ff" } : null}
+            >
+              {res.name}
+            </Link>
+          ) : (
+            <a
+              href="resume.pdf"
+              target="_blank"
+              style={this.props.location === "/" ? { color: "#00b9ff" } : null}
+            >
+              {res.name}
+            </a>
+          )}
         </h4>
       );
     });
