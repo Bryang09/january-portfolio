@@ -58,7 +58,7 @@ export const projects = [
   {
     id: 4,
     img: "./img/traveling.jpg",
-    top: true,
+    top: false,
     recent: false,
     react: true,
     vanilla: false,
@@ -82,6 +82,20 @@ export const projects = [
     demo: "https://bryang09.github.io/ng-restaurant",
     name: "The Restuarant App",
     desc: `This is an application that uses Angular 7 to display different menu items.`
+  },
+  {
+    id: 14,
+    img: "./img/houses.jpg",
+    top: true,
+    recent: true,
+    react: false,
+    vanilla: false,
+    angular: true,
+    axios: false,
+    code: "https://github.com/Bryang09/houses",
+    demo: "https://bryang09.github.io/houses",
+    name: "The Houses App",
+    desc: `This is an application which uses Angular and Firestore to display listings.`
   },
   {
     id: 6,
@@ -143,7 +157,7 @@ export const projects = [
     id: 10,
     img: "./img/split.jpg",
     top: false,
-    recent: true,
+    recent: false,
     react: false,
     vanilla: true,
     angular: false,
