@@ -46,6 +46,7 @@
     height: 30vh;
     transform: translateY(-12vh);
     display: flex;
+    transition: 1s ease;
 
     a {
       width: 45%;
@@ -63,6 +64,7 @@
       align-items: center;
       flex-direction: column;
       background: #fff;
+      transition: 1s ease;
 
       .icon {
         height: 30%;
@@ -281,6 +283,32 @@
       }
       .box2 {
         background: #d54e41;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-aspect-ratio: 4/3) {
+  .Contact {
+    .bg {
+      h1 {
+        font-size: 2.5em !important;
+      }
+    }
+    .contactBoxesContainer {
+      width: 60vw;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) and (min-aspect-ratio: 4/3) {
+  .Contact {
+    .bg {
+      h1 {
+        font-size: 35px !important;
+      }
+      h5 {
+        font-weight: 400;
       }
     }
   }
