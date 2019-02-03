@@ -22,15 +22,9 @@ class Landing extends Component {
         path: "mailto:bryan.gonzalez1020.bg@gmail.com",
         class: "fas fa-envelope"
       }
-    ],
-    width: window.innerWidth
+    ]
   };
 
-  componentDidUpdate = () => {
-    if (window.innerWidth !== this.state.width) {
-      this.setState({ width: window.innerWidth });
-    }
-  };
   render() {
     const icons = this.state.icons.map(res => {
       return (

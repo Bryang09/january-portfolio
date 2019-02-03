@@ -49,6 +49,14 @@
   }
 }
 
+.projectsNav {
+  box-shadow: 1px -7px 80px #333;
+  background: #26e2b6;
+}
+.aboutNav {
+  box-shadow: 1px -7px 80px #333;
+  background: #9d89f5;
+}
 @media screen and (max-width: 768px) {
   .Nav .navContent {
     h4 {

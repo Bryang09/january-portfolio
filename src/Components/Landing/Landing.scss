@@ -26,14 +26,10 @@
     .icon {
       i {
         margin: 0 15px;
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 1);
         font-size: 55px;
         transition: 0.5s linear;
         animation: titles 2s ease;
-
-        &:hover {
-          color: #fff;
-        }
       }
     }
   }

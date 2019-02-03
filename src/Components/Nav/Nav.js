@@ -22,13 +22,15 @@ class Nav extends Component {
   };
 
   render() {
+    const location = this.props.location;
+
     const content = this.state.content.map(res => {
       return (
         <h4 key={res.id}>
           {res.id !== 3 ? (
             <Link
               to={res.link}
-              style={this.props.location === "/" ? { color: "#00b9ff" } : null}
+              style={location === "/" ? { color: "#00b9ff" } : null}
             >
               {res.name}
             </Link>
@@ -36,7 +38,7 @@ class Nav extends Component {
             <a
               href="resume.pdf"
               target="_blank"
-              style={this.props.location === "/" ? { color: "#00b9ff" } : null}
+              style={location === "/" ? { color: "#00b9ff" } : null}
             >
               {res.name}
             </a>
@@ -44,13 +46,21 @@ class Nav extends Component {
         </h4>
       );
     });
-    console.log(this.props);
     return (
-      <div className="Nav">
+      <div
+        // className="Nav"
+        className={
+          location === "/projects"
+            ? "Nav projectsNav"
+            : location === "/about"
+            ? "Nav aboutNav"
+            : "Nav"
+        }
+      >
         <Burger
           burger={this.state.burger}
           click={this.onBurgerClick}
-          location={this.props.location}
+          location={location}
         />
         <div className="logo">
           <h3 id="logo">
