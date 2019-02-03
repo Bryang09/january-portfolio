@@ -79,3 +79,20 @@
     }
   }
 }
+
+// LANDSCAPE
+@media screen and (max-width: 1023px) and (min-aspect-ratio: 4/3) {
+  .Landing {
+    background: linear-gradient(#306dd6, #00b9ff, #39fff1);
+    h1 {
+      font-size: 50px;
+      margin-top: 50px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    .icons .icon i {
+      font-size: 35px;
+    }
+  }
+}

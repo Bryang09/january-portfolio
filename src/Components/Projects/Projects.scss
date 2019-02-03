@@ -9,6 +9,8 @@
     width: 90vw;
     margin: 0 auto;
     transform: translateY(-10vh);
+    position: relative;
+    z-index: 4;
 
     .project {
       height: 40vh;
@@ -37,39 +39,42 @@
       }
     }
   }
-
-  @keyframes project {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+}
+@keyframes project {
+  0% {
+    opacity: 0;
   }
-
-  @keyframes cover {
-    0% {
-      width: 0;
-    }
-    50% {
-      width: 50%;
-    }
-    100% {
-      width: 100%;
-    }
+  100% {
+    opacity: 1;
   }
+}
 
-  @media screen and (max-width: 1192px) {
+@keyframes cover {
+  0% {
+    width: 0;
   }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 
-  @media screen and (max-width: 998px) {
+@media screen and (max-width: 1192px) {
+}
+
+@media screen and (max-width: 998px) {
+  .projectsContainer .project {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Projects {
+    background: linear-gradient(90deg, #25e2b2, #2fc3f6);
+
     .projectsContainer .project {
-      width: 47%;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .Projects .projectsContainer .project {
       width: 47%;
       height: 30vh;
     }
@@ -80,5 +85,34 @@
   .Projects .projectsContainer .project {
     width: 97%;
     height: 30vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Projects {
+    .projectsContainer {
+      .project {
+        height: 40vh;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) and (min-aspect-ratio: 4/3) {
+  .Projects {
+    background: linear-gradient(90deg, #25e2b2, #2fc3f6);
+    .projectsContainer {
+      margin-top: 15vh;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) and (min-aspect-ratio: 4/3) {
+  .Projects {
+    .projectsContainer {
+      .project {
+        height: 60vh;
+      }
+    }
   }
 }

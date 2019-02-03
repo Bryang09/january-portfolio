@@ -57,12 +57,60 @@
 }
 
 @media screen and (max-width: 768px) {
-  .projectBg .options {
-    flex-wrap: wrap;
+  .projectBg {
+    background: transparent;
+    .options {
+      flex-wrap: wrap;
 
-    .option {
-      width: 30%;
-      margin: 1vh 1.5%;
+      .option {
+        width: 30%;
+        margin: 1vh 1.5%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .projectBg {
+    h1 {
+      font-size: 40px;
+    }
+
+    .options {
+      .option {
+        h3 {
+          font-size: 14px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) and (min-aspect-ratio: 4/3) {
+  .projectBg {
+    background: transparent;
+    .options {
+      .option {
+        h3 {
+          position: relative;
+          z-index: 4;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) and (min-aspect-ratio: 4/3) {
+  .projectBg {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-aspect-ratio: 4/3) {
+  .projectBg {
+    h1 {
+      font-size: 40px;
     }
   }
 }

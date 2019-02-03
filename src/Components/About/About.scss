@@ -13,22 +13,25 @@ $color: #00b9ff;
     // justify-content: center;
     align-items: center;
 
-    h2 {
-      text-transform: capitalize;
-    }
+    .paragraph {
+      h2 {
+        text-transform: capitalize;
+        text-align: center;
+      }
 
-    h4 {
-      font-weight: 400;
-      width: 90%;
-      margin: 0 auto;
-      font-size: 20px;
-      color: #b3b3b3;
+      h4 {
+        font-weight: 400;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 20px;
+        color: #b3b3b3;
+      }
     }
 
     .icons {
       display: flex;
       width: 40vw;
-      margin: 5vh auto 0;
+      margin: 5vh auto;
       justify-content: center;
       align-items: center;
 
@@ -94,6 +97,64 @@ $color: #00b9ff;
     width: 80vw;
     .icon i {
       font-size: 50px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .aboutMe {
+    .intPara {
+      .paragraph {
+        h2 {
+          font-size: 20px;
+        }
+        h4 {
+          font-size: 16px;
+        }
+      }
+
+      .icons {
+        margin: 10vh auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-aspect-ratio: 4/3) {
+  .aboutMe {
+    height: 100%;
+
+    .intPara {
+      .paragraph {
+        height: 70vh;
+
+        &:nth-child(1) {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) and (min-aspect-ratio: 4/3) {
+  .aboutMe {
+    .intPara {
+      .paragraph {
+        height: 90vh;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) and (min-aspect-ratio: 4/3) {
+  .aboutMe {
+    .intPara {
+      .paragraph {
+        height: 130vh;
+
+        &:nth-child(2) {
+          height: 90vh;
+        }
+      }
     }
   }
 }

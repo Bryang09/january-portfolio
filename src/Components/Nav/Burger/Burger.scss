@@ -70,5 +70,17 @@
 @media screen and (max-width: 768px) {
   .Burger {
     display: block;
+    .burgerButton {
+      left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) and (min-aspect-ratio: 4/3) {
+  .Burger {
+    display: flex;
+    .burgerButton {
+      left: 20px;
+    }
   }
 }
