@@ -31,19 +31,13 @@ class Project extends Component {
               <div className="buttons">
                 <a href={res.demo} target="_blank" rel="noopener noreferrer">
                   <h4
-                    style={
+                    className={
                       tech === "react"
-                        ? {
-                            background: `linear-gradient(rgb(57, 241, 255), rgb(57,241,255), #1D7980)`
-                          }
+                        ? "react"
                         : tech === "angular"
-                        ? {
-                            background: `linear-gradient(#E53939, #E53939, #802E2E)`
-                          }
+                        ? "angular"
                         : tech === "vanilla"
-                        ? {
-                            background: `linear-gradient(#f8e01e, #f8e01e, #9c9540)`
-                          }
+                        ? "vanilla"
                         : null
                     }
                   >
@@ -52,19 +46,13 @@ class Project extends Component {
                 </a>
                 <a href={res.code} target="_blank" rel="noopener noreferrer">
                   <h4
-                    style={
+                    className={
                       tech === "react"
-                        ? {
-                            background: `linear-gradient(#00B9FF ,#00B9FF , #005D80)`
-                          }
+                        ? "reactCode"
                         : tech === "angular"
-                        ? {
-                            background: `linear-gradient(#7f0e0e,#7f0e0e,#7f0e0e,#3d0a0a)`
-                          }
+                        ? "angularCode"
                         : tech === "vanilla"
-                        ? {
-                            background: `linear-gradient(#e0d54c, #e0d54c, #735e0b)`
-                          }
+                        ? "vanillaCode"
                         : null
                     }
                   >

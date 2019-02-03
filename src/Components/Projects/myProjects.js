@@ -70,6 +70,20 @@ export const projects = [
     desc: `This is an application created with React that focuses on better animations and UI`
   },
   {
+    id: 15,
+    img: "./img/accountant.jpg",
+    top: false,
+    recent: true,
+    react: false,
+    vanilla: false,
+    angular: true,
+    axios: false,
+    code: "https://github.com/Bryang09/accountant",
+    demo: "https://bryang09.github.io/accountant",
+    name: "The Accountant App",
+    desc: `This is an application that uses Angular 7 with React Forms for a fictional acccounting firm.`
+  },
+  {
     id: 5,
     img: "./img/ng-restaurant.jpg",
     top: true,
@@ -83,6 +97,7 @@ export const projects = [
     name: "The Restuarant App",
     desc: `This is an application that uses Angular 7 to display different menu items.`
   },
+
   {
     id: 14,
     img: "./img/houses.jpg",
@@ -143,7 +158,7 @@ export const projects = [
     id: 9,
     img: "./img/word.jpg",
     top: false,
-    recent: true,
+    recent: false,
     react: false,
     vanilla: true,
     angular: false,
