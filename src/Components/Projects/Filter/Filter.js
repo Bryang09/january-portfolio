@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Filter = props => {
-  console.log(props);
   const _projects = props.projects.map(res => {
     return (
       <div

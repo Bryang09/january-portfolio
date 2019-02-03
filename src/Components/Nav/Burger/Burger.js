@@ -46,7 +46,7 @@ const Burger = props => {
             : props.burger && props.location === "vanilla"
             ? { display: "flex", background: "#ead20c" }
             : props.burger && props.location === "/contact"
-            ? { display: "flex", background: "#3cfbf1" }
+            ? { display: "flex", background: "#9c8af6" }
             : props.burger
             ? { display: "flex" }
             : { display: "none" }

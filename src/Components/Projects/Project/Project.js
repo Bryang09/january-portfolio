@@ -10,10 +10,6 @@ class Project extends Component {
     const tech = this.props.match.params.tech;
     const id = this.props.match.params.id;
 
-    console.log(this.props);
-    console.log(tech, id);
-    console.log(projects);
-
     const project = projects
       .filter(res => res.id == id)
       .map(res => {

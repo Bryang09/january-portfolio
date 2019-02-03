@@ -23,7 +23,7 @@ class Contact extends Component {
           style={
             this.state.toggle
               ? {
-                  height: "60vh"
+                  height: "40vh"
                 }
               : {
                   height: "100vh",

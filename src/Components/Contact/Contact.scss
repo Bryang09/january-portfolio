@@ -98,41 +98,31 @@
         }
       }
     }
-
-    // .box1 {
-    //   background: #0077b5;
-    // }
-    // .box2 {
-    //   background: #d54e41;
-    // }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1192px) {
   .Contact {
-    .bg {
-      height: 100%;
-    }
     .contactBoxesContainer {
-      flex-direction: column;
-      height: 100%;
-      transform: translateY(0);
-
-      a {
-        width: 100%;
-        height: 25vh;
-        margin: 1vh auto;
-      }
+      width: 70vw;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .Contact {
+    .contactBoxesContainer {
+      width: 80vw;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .Contact {
-    background: linear-gradient(#39fff1, #9c8af6);
+    background: linear-gradient(#9c8af6, #4e457b);
 
     .bg {
       background: rgba(0, 0, 0, 0) !important;
+      height: 100%;
 
       h1 {
         font-size: 3.5em !important;
@@ -144,15 +134,42 @@
       flex-direction: column;
       height: 100%;
       transform: translateY(0);
+      justify-content: center;
+      align-items: center;
 
       a {
         width: 100%;
-        height: 20vh;
-        margin: 1vh auto;
+        height: 25vh;
+        margin: 3vh auto;
       }
 
       .box {
         border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          i {
+            transform: translate(0);
+            height: auto;
+            border: none;
+            border-radius: 0;
+            background: transparent;
+            color: #fff !important;
+          }
+        }
+
+        .text {
+          display: none;
+        }
+      }
+
+      .box1 {
+        background: #0077b5;
+      }
+      .box2 {
+        background: #d54e41;
       }
     }
   }
