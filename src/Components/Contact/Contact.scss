@@ -1,322 +1,555 @@
+// .Contact {
+//   height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+
+//   .bg {
+//     height: 60vh;
+//     background: url(./contact.svg) no-repeat 0 0 / cover;
+//     background-position: center 13%;
+//     background-size: cover;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     transition: 1s ease;
+
+//     h1 {
+//       color: #fff;
+//       font-weight: 300;
+//       transform: translateY(-5vh);
+//       font-size: 3em;
+//       margin-bottom: 1vh;
+//       transition: 1s ease;
+//     }
+
+//     h5 {
+//       border: 1px solid #fff;
+//       padding: 1.2vh 4vw;
+//       border-radius: 35px;
+//       transition: 1s ease;
+//       cursor: pointer;
+//       color: #fff;
+//       margin-top: 0;
+//       transition: 1s ease;
+//       &:hover {
+//         background: #fff;
+//         color: #333;
+//       }
+//     }
+//   }
+
+//   .contactBoxesContainer {
+//     width: 60vw;
+//     margin: auto;
+//     height: 30vh;
+//     transform: translateY(-20vh);
+//     display: flex;
+//     transition: 1s ease;
+
+//     a {
+//       width: 45%;
+//       height: 90%;
+//       margin: auto 2.5%;
+//     }
+
+//     .box {
+//       width: 100%;
+//       height: 100%;
+//       margin: auto 1.5%;
+//       // border: 0.5px solid #eee;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-direction: column;
+//       background: #fff;
+//       transition: 1s ease;
+
+//       .icon {
+//         height: 30%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         i {
+//           font-size: 65px;
+//           color: #333;
+//           border: 1px solid #eee;
+//           border-radius: 50%;
+//           // padding: 2vh 2vw;
+//           width: 100px;
+//           height: 100px;
+//           transform: translateY(-75px);
+//           background: #fff;
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//         }
+//       }
+
+//       .text {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         h3 {
+//           color: #fff;
+//           font-weight: 400;
+//           transform: translateY(-50px);
+//           font-size: 41px;
+//         }
+//       }
+//     }
+//     .box1 {
+//       background: #0077b5;
+//     }
+//     .box2 {
+//       background: #d54e41;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 1192px) {
+//   .Contact {
+//     .contactBoxesContainer {
+//       width: 70vw;
+//     }
+//   }
+// }
+// @media screen and (max-width: 992px) {
+//   .Contact {
+//     .contactBoxesContainer {
+//       width: 80vw;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   .Contact {
+//     background: linear-gradient(#9c8af6, #4e457b);
+
+//     .bg {
+//       background: rgba(0, 0, 0, 0) !important;
+//       height: 100%;
+
+//       h1 {
+//         font-size: 3.5em !important;
+//         text-align: center;
+//         transform: translateY(2vh);
+//         margin-bottom: 5vh;
+//       }
+//     }
+
+//     .contactBoxesContainer {
+//       flex-direction: column;
+//       height: 100%;
+//       transform: translateY(0);
+//       justify-content: center;
+//       align-items: center;
+
+//       a {
+//         width: 100%;
+//         height: 25vh;
+//         margin: 3vh auto;
+//       }
+
+//       .box {
+//         border: none;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         .icon {
+//           i {
+//             transform: translate(0);
+//             height: auto;
+//             border: none;
+//             border-radius: 0;
+//             background: transparent;
+//             color: #fff !important;
+//           }
+//         }
+
+//         .text {
+//           display: none;
+//         }
+//       }
+
+//       .box1 {
+//         background: #0077b5;
+//       }
+//       .box2 {
+//         background: #d54e41;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 600px) {
+//   .Contact {
+//     justify-content: center;
+//     align-items: center;
+
+//     .bg {
+//       height: 80vh !important;
+//       transform: translateY(10vh);
+//       h1 {
+//         font-size: 2em !important;
+//         text-align: center;
+//       }
+//       h5 {
+//         font-size: 16px;
+//         padding: 0.5vh 5vw;
+//       }
+//     }
+
+//     .contactBoxesContainer {
+//       flex-direction: column;
+//       height: 100%;
+//       transform: translateY(0);
+//       justify-content: center;
+//       align-items: center;
+
+//       a {
+//         width: 100%;
+//         height: 15vh;
+//         margin: 1vh auto;
+//       }
+
+//       .box {
+//         border: none;
+
+//         .icon i {
+//           font-size: 30px;
+//         }
+//         .text {
+//           h3 {
+//             margin-top: 15px;
+//             margin-bottom: 5px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 1025px) and (min-aspect-ratio: 4/3) {
+//   .Contact {
+//     background: linear-gradient(#9c8af6, #4e457b);
+
+//     .bg {
+//       background: rgba(0, 0, 0, 0) !important;
+//       height: 100%;
+
+//       h1 {
+//         font-size: 3.5em !important;
+//         text-align: center;
+//         transform: translateY(2vh);
+//         margin-bottom: 5vh;
+//       }
+//     }
+
+//     .contactBoxesContainer {
+//       flex-direction: column;
+//       height: 100%;
+//       transform: translateY(0);
+//       justify-content: center;
+//       align-items: center;
+
+//       a {
+//         width: 100%;
+//         height: 20vh;
+//         margin: 3vh auto;
+//       }
+
+//       .box {
+//         border: none;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         .icon {
+//           i {
+//             transform: translate(0);
+//             height: auto;
+//             border: none;
+//             border-radius: 0;
+//             background: transparent;
+//             color: #fff !important;
+//           }
+//         }
+
+//         .text {
+//           display: none;
+//         }
+//       }
+
+//       .box1 {
+//         background: #0077b5;
+//       }
+//       .box2 {
+//         background: #d54e41;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 1023px) and (min-aspect-ratio: 4/3) {
+//   .Contact {
+//     .bg {
+//       h1 {
+//         font-size: 2.5em !important;
+//       }
+//     }
+//     .contactBoxesContainer {
+//       width: 60vw;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 500px) and (min-aspect-ratio: 4/3) {
+//   .Contact {
+//     .bg {
+//       h1 {
+//         font-size: 35px !important;
+//       }
+//       h5 {
+//         font-weight: 400;
+//       }
+//     }
+//   }
+// }
+
 .Contact {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
-  .bg {
-    height: 60vh;
-    background: url(./contact.svg) no-repeat 0 0 / cover;
-    background-position: center 13%;
-    background-size: cover;
+  .contactHero {
+    // background: url(./bg4.svg) no-repeat center center / cover;
+    height: 54vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    transition: 1s ease;
 
     h1 {
       color: #fff;
-      font-weight: 300;
-      transform: translateY(-5vh);
-      font-size: 3em;
-      margin-bottom: 1vh;
-      transition: 1s ease;
-    }
-
-    h5 {
-      border: 1px solid #fff;
-      padding: 1.2vh 4vw;
-      border-radius: 35px;
-      transition: 1s ease;
-      cursor: pointer;
-      color: #fff;
-      margin-top: 0;
-      transition: 1s ease;
-      &:hover {
-        background: #fff;
-        color: #333;
-      }
+      font-weight: 400;
+      text-align: center;
+      font-size: 50px;
     }
   }
 
-  .contactBoxesContainer {
-    width: 60vw;
-    margin: auto;
-    height: 30vh;
-    transform: translateY(-20vh);
+  .contactForm {
+    height: 40vh;
     display: flex;
-    transition: 1s ease;
-
-    a {
-      width: 45%;
-      height: 90%;
-      margin: auto 2.5%;
-    }
-
-    .box {
-      width: 100%;
-      height: 100%;
-      margin: auto 1.5%;
-      // border: 0.5px solid #eee;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background: #fff;
-      transition: 1s ease;
-
-      .icon {
-        height: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        i {
-          font-size: 65px;
-          color: #333;
-          border: 1px solid #eee;
-          border-radius: 50%;
-          // padding: 2vh 2vw;
-          width: 100px;
-          height: 100px;
-          transform: translateY(-75px);
-          background: #fff;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-      }
-
-      .text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        h3 {
-          color: #fff;
-          font-weight: 400;
-          transform: translateY(-50px);
-          font-size: 41px;
-        }
-      }
-    }
-    .box1 {
-      background: #0077b5;
-    }
-    .box2 {
-      background: #d54e41;
-    }
-  }
-}
-
-@media screen and (max-width: 1192px) {
-  .Contact {
-    .contactBoxesContainer {
-      width: 70vw;
-    }
-  }
-}
-@media screen and (max-width: 992px) {
-  .Contact {
-    .contactBoxesContainer {
-      width: 80vw;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .Contact {
-    background: linear-gradient(#9c8af6, #4e457b);
-
-    .bg {
-      background: rgba(0, 0, 0, 0) !important;
-      height: 100%;
-
-      h1 {
-        font-size: 3.5em !important;
-        text-align: center;
-        transform: translateY(2vh);
-        margin-bottom: 5vh;
-      }
-    }
-
-    .contactBoxesContainer {
-      flex-direction: column;
-      height: 100%;
-      transform: translateY(0);
-      justify-content: center;
-      align-items: center;
-
-      a {
-        width: 100%;
-        height: 25vh;
-        margin: 3vh auto;
-      }
-
-      .box {
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .icon {
-          i {
-            transform: translate(0);
-            height: auto;
-            border: none;
-            border-radius: 0;
-            background: transparent;
-            color: #fff !important;
-          }
-        }
-
-        .text {
-          display: none;
-        }
-      }
-
-      .box1 {
-        background: #0077b5;
-      }
-      .box2 {
-        background: #d54e41;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .Contact {
     justify-content: center;
     align-items: center;
+    // form {
+    //   height: 100%;
+    //   width: 60vw;
+    //   display: flex;
+    //   flex-direction: column;
 
-    .bg {
-      height: 80vh !important;
-      transform: translateY(10vh);
-      h1 {
-        font-size: 2em !important;
-        text-align: center;
-      }
-      h5 {
-        font-size: 16px;
-        padding: 0.5vh 5vw;
-      }
-    }
+    //   .names {
+    //     margin: 1vh;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
 
-    .contactBoxesContainer {
-      flex-direction: column;
-      height: 100%;
-      transform: translateY(0);
-      justify-content: center;
-      align-items: center;
-
-      a {
-        width: 100%;
-        height: 15vh;
-        margin: 1vh auto;
-      }
-
-      .box {
-        border: none;
-
-        .icon i {
-          font-size: 30px;
-        }
-        .text {
-          h3 {
-            margin-top: 15px;
-            margin-bottom: 5px;
-          }
-        }
-      }
-    }
+    //     input {
+    //       width: 48%;
+    //       margin: 0px 0.5%;
+    //     }
+    //   }
+    // }
   }
 }
-
-@media screen and (max-width: 1025px) and (min-aspect-ratio: 4/3) {
-  .Contact {
-    background: linear-gradient(#9c8af6, #4e457b);
-
-    .bg {
-      background: rgba(0, 0, 0, 0) !important;
-      height: 100%;
-
-      h1 {
-        font-size: 3.5em !important;
-        text-align: center;
-        transform: translateY(2vh);
-        margin-bottom: 5vh;
-      }
-    }
-
-    .contactBoxesContainer {
-      flex-direction: column;
-      height: 100%;
-      transform: translateY(0);
-      justify-content: center;
-      align-items: center;
-
-      a {
-        width: 100%;
-        height: 20vh;
-        margin: 3vh auto;
-      }
-
-      .box {
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .icon {
-          i {
-            transform: translate(0);
-            height: auto;
-            border: none;
-            border-radius: 0;
-            background: transparent;
-            color: #fff !important;
-          }
-        }
-
-        .text {
-          display: none;
-        }
-      }
-
-      .box1 {
-        background: #0077b5;
-      }
-      .box2 {
-        background: #d54e41;
-      }
-    }
-  }
+input {
+  outline: none;
+  border: none;
 }
 
-@media screen and (max-width: 1023px) and (min-aspect-ratio: 4/3) {
-  .Contact {
-    .bg {
-      h1 {
-        font-size: 2.5em !important;
-      }
-    }
-    .contactBoxesContainer {
-      width: 60vw;
-    }
-  }
+textarea {
+  outline: none;
+  border: none;
 }
 
-@media screen and (max-width: 500px) and (min-aspect-ratio: 4/3) {
-  .Contact {
-    .bg {
-      h1 {
-        font-size: 35px !important;
-      }
-      h5 {
-        font-weight: 400;
-      }
-    }
-  }
+.container-contact100 {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.contact100-map {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.wrap-contact100 {
+  width: 1170px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 82px 180px 33px 180px;
+  position: relative;
+  display: none;
+}
+
+.show-wrap-contact100 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.form {
+  width: 60%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 68px;
+}
+
+.form-title {
+  display: block;
+  width: 100%;
+  font-size: 39px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 44px;
+}
+
+.inputWrap {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #d9d9d9;
+  padding-bottom: 13px;
+  margin-bottom: 65px;
+}
+
+.wrap {
+  width: calc((100% - 30px) / 2);
+}
+
+.label {
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 5px;
+}
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+  transition: all 0.4s;
+
+  background: #ff4b5a;
+}
+
+input.input {
+  height: 40px;
+}
+
+textarea.input {
+  min-height: 110px;
+  padding-top: 9px;
+  padding-bottom: 13px;
+}
+
+.input:focus + .focus-input::before {
+  width: 100%;
+}
+
+.has-val.input + .focus-input::before {
+  width: 100%;
+}
+
+.container-form-btn {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -25px;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 50px;
+  background-color: #ff4b5a;
+  border-radius: 25px;
+
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+
+  transition: all 0.4s;
+
+  box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+}
+
+.form-btn i {
+  transition: all 0.4s;
+}
+
+.form-btn:hover {
+  background-color: #333333;
+}
+
+.form-btn:hover i {
+  transform: translateX(10px);
+}
+
+/*---------------------------------------------*/
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
 }
