@@ -11,7 +11,7 @@ class Nav extends Component {
     content: [
       { id: 0, name: "about", link: "/about" },
       { id: 1, name: "projects", link: "/projects" },
-      { id: 2, name: "contact", link: "/contact" },
+      // { id: 2, name: "contact", link: "/contact" },
       { id: 3, name: "resume", link: "/resume" }
     ],
     burger: false

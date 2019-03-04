@@ -44,7 +44,7 @@ export const projects = [
   {
     id: 3,
     img: "./img/anime.jpg",
-    top: true,
+    top: false,
     recent: false,
     react: true,
     vanilla: false,
@@ -68,6 +68,20 @@ export const projects = [
     demo: "https://bryang09.github.io/traveling/#/",
     name: "The Traveling App",
     desc: `This is an application created with React that focuses on better animations and UI`
+  },
+  {
+    id: 16,
+    img: "./img/hotels.jpg",
+    top: true,
+    recent: true,
+    react: true,
+    vanilla: false,
+    angular: false,
+    axios: true,
+    code: "https://github.com/Bryang09/react-hotels",
+    demo: "https://glacial-harbor-45524.herokuapp.com/#/",
+    name: "The Hotels App",
+    desc: `This is a full MERN Application which lets the user search for hotels.`
   },
   {
     id: 15,

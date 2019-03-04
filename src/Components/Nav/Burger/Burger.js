@@ -45,9 +45,10 @@ const Burger = props => {
             ? { display: "flex", background: "#E53938" }
             : props.burger && props.location === "vanilla"
             ? { display: "flex", background: "#ead20c" }
-            : props.burger && props.location === "/contact"
-            ? { display: "flex", background: "#9c8af6" }
-            : props.burger
+            : // :
+            // props.burger && props.location === "/contact"
+            // ? { display: "flex", background: "#9c8af6" }
+            props.burger
             ? { display: "flex" }
             : { display: "none" }
         }
@@ -65,9 +66,9 @@ const Burger = props => {
         <h3 className="burgerOptions">
           <Link to="/projects">projects</Link>
         </h3>
-        <h3 className="burgerOptions">
+        {/* <h3 className="burgerOptions">
           <Link to="/contact">contact</Link>
-        </h3>
+        </h3> */}
         <h3 className="burgerOptions">
           <a href="resume.pdf" target="_blank">
             resume

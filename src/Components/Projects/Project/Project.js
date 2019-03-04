@@ -11,7 +11,7 @@ class Project extends Component {
     const id = this.props.match.params.id;
 
     const project = projects
-      .filter(res => res.id == id)
+      .filter(res => res.id === parseInt(id))
       .map(res => {
         return (
           <div
