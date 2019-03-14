@@ -1,5 +1,19 @@
 export const projects = [
   {
+    id: 17,
+    img: "./img/fashion.jpg",
+    top: true,
+    recent: true,
+    react: true,
+    vanilla: false,
+    angular: false,
+    axios: true,
+    code: "https://github.com/Bryang09/men-clothing",
+    demo: "https://thawing-citadel-89279.herokuapp.com",
+    name: "The Fashion App",
+    desc: `This is a MERN application intended to be all about men clothing`
+  },
+  {
     id: 0,
     img: "./img/watches.jpg",
     top: true,
