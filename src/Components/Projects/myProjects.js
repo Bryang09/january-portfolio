@@ -114,7 +114,7 @@ export const projects = [
   {
     id: 5,
     img: "./img/ng-restaurant.jpg",
-    top: true,
+    top: false,
     recent: false,
     react: false,
     vanilla: false,
@@ -144,7 +144,7 @@ export const projects = [
     id: 6,
     img: "./img/designer.jpg",
     top: false,
-    recent: true,
+    recent: false,
     react: false,
     vanilla: true,
     angular: false,
@@ -172,7 +172,7 @@ export const projects = [
     id: 8,
     img: "./img/speech.jpg",
     top: false,
-    recent: true,
+    recent: false,
     react: false,
     vanilla: true,
     angular: false,
@@ -214,7 +214,7 @@ export const projects = [
     id: 11,
     img: "./img/ghFinder.jpg",
     top: false,
-    recent: true,
+    recent: false,
     react: false,
     vanilla: true,
     angular: false,
@@ -251,5 +251,19 @@ export const projects = [
     demo: "https://bryang09.github.io/ng-trainer",
     name: "The Trainer App",
     desc: `This is an application for a for a fiction trainer.`
+  },
+  {
+    id: 18,
+    img: "./img/local.jpg",
+    top: false,
+    recent: true,
+    react: true,
+    vanilla: false,
+    angular: true,
+    axios: true,
+    code: "https://github.com/Bryang09/local-businesses",
+    demo: "https://bryang09.github.io/local-businesses/#/",
+    name: "The Business Finder App",
+    desc: `This is an application that searches for local businesses.`
   }
 ];
