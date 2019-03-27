@@ -259,7 +259,7 @@ export const projects = [
     recent: true,
     react: true,
     vanilla: false,
-    angular: true,
+    angular: false,
     axios: true,
     code: "https://github.com/Bryang09/local-businesses",
     demo: "https://bryang09.github.io/local-businesses/#/",
