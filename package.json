@@ -2,7 +2,7 @@
   "name": "dist",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bryan-gonzalez.com",
+  "homepage": "http://bryang09.github.io/january-port",
   "dependencies": {
     "axios": "^0.18.0",
     "node-sass": "^4.11.0",
